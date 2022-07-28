@@ -26,7 +26,7 @@ const Navbar = () => {
     <div class="navbar-center hidden lg:flex justify-evenly">
       <ul tabindex="0" class=" menu-horizontal p-0 text-lg ">
         <li class="hover:text-green-900 font-bold  active text-lg "><Link to ="/" >Home</Link></li>
-        <li class="hover:text-green-900 font-bold mx-7" ><Link to ="" >Admission</Link></li>
+        <li class="hover:text-green-900 font-bold mx-7" ><a href ="#enroll" >Admission</a></li>
         <li class="hover:text-green-900 font-bold "><Link to ="" >Notice</Link></li>
         <li class="hover:text-green-900 font-bold mx-7 "><Link to ="" >Gallery</Link></li>
         <li class="hover:text-green-900 font-bold "><Link to ="" >Contact Us</Link></li>

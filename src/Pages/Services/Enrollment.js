@@ -1,11 +1,7 @@
 import React from 'react'
-import p1 from "../../image/services/p1.webp"
-import p2 from "../../image/services/p2.jpg"
-import p3 from "../../image/services/p3.jpg"
-import p4 from "../../image/services/p4.jpg"
 const Enrollment = () => {
   return (
-    <div class="w-full h-auto p-12 mt-5">
+    <div class="w-full h-auto p-12 mt-5" id="enroll">
        <h1 class="text-orange-700 text-center text-4xl ">Enrollment</h1>
        <h1 class="text-black text-center lg:text-xl text-sm">Steps done with heart, soul, mind & strength</h1>
        <div class="mx-auto mt-9 lg:block hidden">
