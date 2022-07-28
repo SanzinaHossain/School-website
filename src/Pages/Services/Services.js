@@ -5,7 +5,7 @@ import p3 from "../../image/services/p3.jpg"
 import p4 from "../../image/services/p4.jpg"
 const Services = () => {
   return (
-    <div class='w-full h-auto p-12 mt-8'>
+    <div class='w-full h-auto p-12 mt-6'>
         <h1 class="text-green-600 text-center text-4xl "> Our Services</h1>
         <h1 class="text-black text-center lg:text-xl text-sm">We make your child happy day after day</h1>
     <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 lg:mx-12 mx-8 mt-16">
