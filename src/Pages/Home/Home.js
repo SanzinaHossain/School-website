@@ -4,6 +4,7 @@ import school from "../../image/school.jpg"
 import Services from '../Services/Services'
 import Play from '../Services/Play'
 import Play1 from '../Services/Play1'
+import Enrollment from '../Services/Enrollment'
 const Home = () => {
   return (
     <div class="">
@@ -20,6 +21,7 @@ const Home = () => {
      <Play></Play>
      <Services></Services>
      <Play1></Play1>
+     <Enrollment></Enrollment>
  </div>
   )
 }
