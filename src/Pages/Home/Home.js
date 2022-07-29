@@ -5,6 +5,8 @@ import Services from '../Services/Services'
 import Play from '../Services/Play'
 import Play1 from '../Services/Play1'
 import Enrollment from '../Services/Enrollment'
+import UserContact from '../Contact/UserContact'
+import Footer from '../Footer/Footer'
 const Home = () => {
   return (
     <div class="">
@@ -22,6 +24,7 @@ const Home = () => {
      <Services></Services>
      <Play1></Play1>
      <Enrollment></Enrollment>
+     <UserContact></UserContact>
  </div>
   )
 }

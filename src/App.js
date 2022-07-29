@@ -13,6 +13,10 @@ import AdminGallery from './Pages/Gallery/AdminGallery';
 import SingleAdminGallery from './Pages/Gallery/SingleAdminGallery';
 import AddGallery from './Pages/Gallery/AddGallery';
 import UpdateGallery from './Pages/Gallery/UpdateGallery';
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
+import UserContact from './Pages/Contact/UserContact';
+import AdminContact from './Pages/Contact/AdminContact';
 function App() {
   return (
     <div >
@@ -28,9 +32,12 @@ function App() {
         <Route path="services" element={<Services></Services>}></Route>
         <Route path="singleadmingallery" element={<SingleAdminGallery></SingleAdminGallery>}></Route>
         <Route path="addgallery" element={<AddGallery></AddGallery>}></Route>
+        <Route path="usercontact" element={<UserContact></UserContact>}></Route>
+        <Route path="admincontact" element={<AdminContact></AdminContact>}></Route>
         <Route path="/updategallery/:id" element={<UpdateGallery></UpdateGallery>}></Route>
       </Routes>
       <Footer></Footer>
+      <ToastContainer />
     </div>
   );
 }

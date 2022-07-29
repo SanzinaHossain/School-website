@@ -15,6 +15,7 @@ const SingleAdminGallery = ({g}) => {
           .then(res=>res.json())
           .then(data=>{
             console.log(data)
+            alert("Delete Items Successfully")
               window.location.reload()
           })
         }

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import SingleGallery from './SingleGallery'
 import Classroom from "../../image/services/Classroom.webp"
+import Footer from '../Footer/Footer'
 const Gallery = () => {
     const [gallery,setGallery]=useState([])
     useEffect(()=>{

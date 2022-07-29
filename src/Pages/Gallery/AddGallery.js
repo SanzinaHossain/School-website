@@ -1,6 +1,7 @@
 import React from 'react'
 import { useForm } from 'react-hook-form';
 import p5 from "../../image/services/p5.jpg"
+import { toast, ToastContainer } from 'react-toastify';
 const AddGallery = () => {
     const { register, formState: { errors }, handleSubmit } = useForm();
   const onSubmit = data =>{ 
@@ -21,7 +22,7 @@ const AddGallery = () => {
           .then(r=>{
             if(r.success)
             {
-              console.log("successfull")
+               alert("Add Items Successfully")
             }
           })       
       
@@ -29,8 +30,7 @@ const AddGallery = () => {
   return (
     <div class="bg-no-repeat w-full bg-cover"style={{backgroundImage:`url(${p5})`}}>
     <div class="flex justify-center items-center pt-6 text-black pb-10 ">
-  <div class="card w-96  shadow-2xl bg-black">
-    <div class="card-body">
+  <div class="mx-auto shadow-2xl w-96 h-auto rounded-xl bg-black pl-10 pr-10 pb-10 pt-10">
        <h2 class=" text-4xl text-center text-green-700">Please Add!!!</h2>
        <form onSubmit={handleSubmit(onSubmit)}>
          <div class="form-control w-full max-w-xs">
@@ -75,7 +75,7 @@ const AddGallery = () => {
 </form>
 </div>
 </div>
-</div>
+<ToastContainer />
 </div>
   )
 }

@@ -42,7 +42,7 @@ const UpdateGallery = () => {
       console.log(r)
       if(r.success)
       {
-        console.log("successful")
+        alert("Update Item Successfully")
       }
     })
   }
@@ -50,9 +50,9 @@ const UpdateGallery = () => {
   return (
     <div class="bg-no-repeat w-full bg-cover"style={{backgroundImage:`url(${p5})`}}>
     <div class="flex justify-center items-center pt-6 text-black pb-10 ">
-  <div class="card w-96  shadow-2xl bg-black">
-    <div class="card-body">
-       <h2 class=" text-4xl text-center text-green-700">Please Update!!!</h2>
+  <div class="mx-auto shadow-2xl w-96 h-auto rounded-xl bg-black pl-10 pr-10 pb-10 pt-10">
+    <div class="">
+       <h2 class=" text-4xl text-center text-green-700 pb-3">Please Update!!!</h2>
        <form onSubmit={handleSubmit(onSubmit)}>
          <div class="form-control w-full max-w-xs">
        <label class="label">
