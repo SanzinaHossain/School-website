@@ -9,6 +9,9 @@ import Footer from './Pages/Footer/Footer';
 import Enrollment from './Pages/Services/Enrollment';
 import Notice from './Pages/Notice/Notice';
 import Gallery from "./Pages/Gallery/Gallery"
+import AdminGallery from './Pages/Gallery/AdminGallery';
+import SingleAdminGallery from './Pages/Gallery/SingleAdminGallery';
+import AddGallery from './Pages/Gallery/AddGallery';
 function App() {
   return (
     <div >
@@ -20,6 +23,10 @@ function App() {
         <Route path="gallery" element={<Gallery></Gallery>}></Route>
         <Route path="enrollment" element={<Enrollment></Enrollment>}></Route>
         <Route path="services" element={<Services></Services>}></Route>
+        <Route path="admingallery" element={<AdminGallery></AdminGallery>}></Route>
+        <Route path="services" element={<Services></Services>}></Route>
+        <Route path="singleadmingallery" element={<SingleAdminGallery></SingleAdminGallery>}></Route>
+        <Route path="addgallery" element={<AddGallery></AddGallery>}></Route>
       </Routes>
       <Footer></Footer>
     </div>

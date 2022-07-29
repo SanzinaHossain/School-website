@@ -4,7 +4,7 @@ import Classroom from "../../image/services/Classroom.webp"
 const Gallery = () => {
     const [gallery,setGallery]=useState([])
     useEffect(()=>{
-          fetch("Gallery.json")
+          fetch("http://localhost:5000/gallerydata")
           .then(res=>res.json())
           .then(data=>{
               setGallery(data);
