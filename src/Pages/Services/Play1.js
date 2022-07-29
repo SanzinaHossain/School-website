@@ -15,7 +15,7 @@ const Play1 = () => {
                 </div>
             </div>
             <div class="mx-auto pt-16" >
-            <button class="btn btn-outline border-white text-white rounded-full border-2 hover:bg-white hover:border-white hover:text-black">Contact Us</button>
+            <button class="btn btn-outline border-white text-white rounded-full border-2 hover:bg-white hover:border-white hover:text-black">Get Ready</button>
             </div>
          </div>
     </div>
