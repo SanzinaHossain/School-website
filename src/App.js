@@ -12,6 +12,7 @@ import Gallery from "./Pages/Gallery/Gallery"
 import AdminGallery from './Pages/Gallery/AdminGallery';
 import SingleAdminGallery from './Pages/Gallery/SingleAdminGallery';
 import AddGallery from './Pages/Gallery/AddGallery';
+import UpdateGallery from './Pages/Gallery/UpdateGallery';
 function App() {
   return (
     <div >
@@ -27,6 +28,7 @@ function App() {
         <Route path="services" element={<Services></Services>}></Route>
         <Route path="singleadmingallery" element={<SingleAdminGallery></SingleAdminGallery>}></Route>
         <Route path="addgallery" element={<AddGallery></AddGallery>}></Route>
+        <Route path="/updategallery/:id" element={<UpdateGallery></UpdateGallery>}></Route>
       </Routes>
       <Footer></Footer>
     </div>

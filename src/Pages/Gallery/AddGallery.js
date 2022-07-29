@@ -1,5 +1,6 @@
 import React from 'react'
 import { useForm } from 'react-hook-form';
+import p5 from "../../image/services/p5.jpg"
 const AddGallery = () => {
     const { register, formState: { errors }, handleSubmit } = useForm();
   const onSubmit = data =>{ 
@@ -26,8 +27,8 @@ const AddGallery = () => {
       
     }
   return (
-    <div>
-    <div class="flex justify-center items-center mt-7 text-black mb-10">
+    <div class="bg-no-repeat w-full bg-cover"style={{backgroundImage:`url(${p5})`}}>
+    <div class="flex justify-center items-center pt-6 text-black pb-10 ">
   <div class="card w-96  shadow-2xl bg-black">
     <div class="card-body">
        <h2 class=" text-4xl text-center text-green-700">Please Add!!!</h2>
@@ -75,7 +76,7 @@ const AddGallery = () => {
 </div>
 </div>
 </div>
- </div>
+</div>
   )
 }
 
