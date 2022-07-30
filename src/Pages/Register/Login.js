@@ -41,7 +41,7 @@ const Login = () => {
   
   return (
     <div class=" w-full h-full bg-no-repeat bg-cover lg:p-20 p-12 "style={{backgroundImage:`url(${Classroom})`}}>
-       <div class="mx-auto shadow-2xl w-80 h-auto rounded-xl bg-black pl-10 pr-10 pb-10">
+       <div class="mx-auto shadow-2xl lg:w-80 h-auto rounded-xl bg-black pl-10 pr-10 pb-10  ">
             <h1 class="text-white font-bold text-center text-2xl pt-7 pb-7">Login Form</h1>
             <form onSubmit={handleSubmit(onSubmit)}>
            <div class="form-control w-full max-w-xs">
