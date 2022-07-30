@@ -6,7 +6,7 @@ const UpdateGallery = () => {
     const {id}=useParams();
     const [gallery,setGallery]=useState([])
     useEffect(()=>{
-          fetch(`http://localhost:5000/gallerydata/${id}`)
+          fetch(`https://dry-temple-93431.herokuapp.com/gallerydata/${id}`)
           .then(res=>res.json())
           .then(data=>{
               setGallery(data);
@@ -30,7 +30,7 @@ const UpdateGallery = () => {
         description:data.description
 
     }
-    fetch(`http://localhost:5000/gallerydata/${id}`,{
+    fetch(`https://dry-temple-93431.herokuapp.com/gallerydata/${id}`,{
       method:'PUT',
       headers:{
         'content-type':'application/json',

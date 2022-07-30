@@ -4,7 +4,7 @@ import SingleContact from './SingleContact'
 const AdminContact = () => {
     const [contact,setContact]=useState([])
     useEffect(()=>{
-          fetch("http://localhost:5000/usercontact")
+          fetch("https://dry-temple-93431.herokuapp.com/usercontact")
           .then(res=>res.json())
           .then(data=>{
               setContact(data);

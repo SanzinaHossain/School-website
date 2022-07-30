@@ -9,7 +9,7 @@ const SingleAdminNotice = ({n,value}) => {
         const proceed=window.confirm('Are you sure?')
       if(proceed)
       {
-          const url=`http://localhost:5000/allnotice/${id}`;
+          const url=`https://dry-temple-93431.herokuapp.com/allnotice/${id}`;
           fetch(url,{
               method:'DELETE'
           })

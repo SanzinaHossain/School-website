@@ -6,7 +6,7 @@ const AdminNotice = () => {
     const [notice,setNotice]=useState([])
     const navigate=useNavigate();
     useEffect(()=>{
-          fetch("http://localhost:5000/allnotice")
+          fetch("https://dry-temple-93431.herokuapp.com/allnotice")
           .then(res=>res.json())
           .then(data=>{
               setNotice(data);

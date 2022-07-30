@@ -8,7 +8,7 @@ const UserContact = () => {
         mobile:data.mobile,
         message:data.mes
     }
-    fetch('http://localhost:5000/usercontact',{
+    fetch('https://dry-temple-93431.herokuapp.com/usercontact',{
             method:'POST',
               headers:{
                 'content-type':'application/json',

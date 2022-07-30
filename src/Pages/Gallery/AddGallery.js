@@ -11,7 +11,7 @@ const AddGallery = () => {
             description:data.description        
           }  
           console.log(galleryadd)
-          fetch('http://localhost:5000/gallerydata',{
+          fetch('https://dry-temple-93431.herokuapp.com/gallerydata',{
             method:'POST',
               headers:{
                 'content-type':'application/json',

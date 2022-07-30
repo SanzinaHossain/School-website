@@ -7,7 +7,7 @@ const UpdateNotice = () => {
     const {id}=useParams();
     const [notice,setNotice]=useState([])
     useEffect(()=>{
-          fetch(`http://localhost:5000/allnotice/${id}`)
+          fetch(`https://dry-temple-93431.herokuapp.com/allnotice/${id}`)
           .then(res=>res.json())
           .then(data=>{
               setNotice(data);
@@ -32,7 +32,7 @@ const UpdateNotice = () => {
         noticelink:data.noticelink
 
     }
-    fetch(`http://localhost:5000/allnotice/${id}`,{
+    fetch(`https://dry-temple-93431.herokuapp.com/allnotice/${id}`,{
       method:'PUT',
       headers:{
         'content-type':'application/json',
@@ -52,7 +52,7 @@ const UpdateNotice = () => {
     <div class="bg-no-repeat w-full bg-cover"style={{backgroundImage:`url(${p5})`}}>
     <div class="flex justify-center items-center pt-6 text-black pb-10 ">
   <div class="mx-auto shadow-2xl w-96 h-auto rounded-xl bg-black pl-10 pr-10 pb-10 pt-10">
-       <h2 class=" text-4xl text-center text-green-700">Add Notice!!!</h2>
+       <h2 class=" text-4xl text-center text-green-700">Update Notice!!!</h2>
        <form onSubmit={handleSubmit(onSubmit)}>
        <div class="form-control w-full max-w-xs">
        <label class="label">

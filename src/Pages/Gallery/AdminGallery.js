@@ -5,7 +5,7 @@ const AdminGallery = () => {
      const navigate=useNavigate();
     const [gallery,setGallery]=useState([])
     useEffect(()=>{
-          fetch("http://localhost:5000/gallerydata")
+          fetch("https://dry-temple-93431.herokuapp.com/gallerydata")
           .then(res=>res.json())
           .then(data=>{
               setGallery(data);

@@ -30,7 +30,7 @@ const Navbar = () => {
         <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
         <li><Link to="/" >Home</Link></li>
         <li><Link to="/enrollement" >Admission</Link></li>
-        <li><Link to="/notice" >Notice</Link></li>
+        <li class="hover:text-green-700">{user? <Link to="/adminnotice">Notice</Link>:<Link to="/notice">Notice</Link>}</li>
         <li class="hover:text-green-700">{user? <Link to="/admingallery">Gallery</Link>:<Link to="/gallery">Gallery</Link>}</li> 
         <li class="hover:text-green-700">{user? <Link to="/admincontact">Contact</Link>:<Link to="/usercontact">Contact Us</Link>}</li>
         <li class="hover:text-green-700">{user? <Link onClick={logout} to="/login">LogOut</Link>:<Link to="/login">Login</Link>}</li> 

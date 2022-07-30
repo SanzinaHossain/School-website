@@ -12,7 +12,7 @@ const AddNotice = () => {
               noticelink:data.noticelink     
             }  
             console.log(noticeadd)
-            fetch('http://localhost:5000/allnotice',{
+            fetch('https://dry-temple-93431.herokuapp.com/allnotice',{
               method:'POST',
                 headers:{
                   'content-type':'application/json',

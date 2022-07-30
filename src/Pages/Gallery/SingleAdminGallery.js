@@ -8,7 +8,7 @@ const SingleAdminGallery = ({g}) => {
         const proceed=window.confirm('Are you sure?')
       if(proceed)
       {
-          const url=`http://localhost:5000/gallerydata/${id}`;
+          const url=`https://dry-temple-93431.herokuapp.com/gallerydata/${id}`;
           fetch(url,{
               method:'DELETE'
           })
