@@ -5,7 +5,7 @@ const Notice = () => {
   let value=parseInt(0);
   const [notice,setNotice]=useState([])
     useEffect(()=>{
-          fetch("notice.json")
+          fetch("http://localhost:5000/allnotice")
           .then(res=>res.json())
           .then(data=>{
               setNotice(data);

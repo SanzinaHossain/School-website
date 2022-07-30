@@ -2,11 +2,7 @@ import React from 'react'
 import { Navigate, useNavigate } from 'react-router-dom';
 
 const SingleNotice = ({n,value}) => {
-    const navigate=useNavigate()
-    const{tittle,date,des,noticelink}=n;
-    const c=()=>{
-        navigate("/modal");
-    }
+    const{tittle,date,noticelink}=n;
   return (
     <tr class="w-full border border-slate-300 ">
         <td class="text-black border border-slate-300 h-auto p-5" >{value}</td>
