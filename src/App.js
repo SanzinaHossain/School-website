@@ -18,6 +18,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import UserContact from './Pages/Contact/UserContact';
 import AdminContact from './Pages/Contact/AdminContact';
 import AdminNotice from './Pages/Notice/AdminNotice';
+import AddNotice from './Pages/Notice/AddNotice';
 function App() {
   return (
     <div >
@@ -28,6 +29,7 @@ function App() {
         <Route path="notice" element={<Notice></Notice>}></Route>
         <Route path="gallery" element={<Gallery></Gallery>}></Route>
         <Route path="enrollment" element={<Enrollment></Enrollment>}></Route>
+        <Route path="addnotice" element={<AddNotice></AddNotice>}></Route>
         <Route path="services" element={<Services></Services>}></Route>
         <Route path="admingallery" element={<AdminGallery></AdminGallery>}></Route>
         <Route path="adminnotice" element={<AdminNotice></AdminNotice>}></Route>

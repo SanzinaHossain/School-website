@@ -75,7 +75,6 @@ const AddGallery = () => {
 </form>
 </div>
 </div>
-<ToastContainer />
 </div>
   )
 }
