@@ -15,7 +15,7 @@ const Navbar = () => {
   const menuitems=<>
          <li class="hover:text-green-900 font-bold  active text-lg "><Link to ="/" >Home</Link></li>
         <li class="hover:text-green-900 font-bold mx-7" ><Link to ="/enrollment" >Admission</Link></li>
-        <li class="hover:text-green-900 font-bold "><Link to ="/notice" >Notice</Link></li>
+        <li class="hover:text-green-700 font-bold">{user? <Link to="/adminnotice">Notice</Link>:<Link to="/notice">Notice</Link>}</li>
         <li class="hover:text-green-700 font-bold mx-7">{user? <Link to="/admingallery">Gallery</Link>:<Link to="/gallery">Gallery</Link>}</li> 
         <li class="hover:text-green-700 font-bold">{user? <Link to="/admincontact">Contact</Link>:<Link to="/usercontact">Contact Us</Link>}</li>
         <li class="hover:text-green-700 font-bold mx-7">{user? <Link onClick={logout} to="/login">LogOut</Link>:<Link to="/login">Login</Link>}</li> 

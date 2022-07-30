@@ -17,6 +17,7 @@ import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
 import UserContact from './Pages/Contact/UserContact';
 import AdminContact from './Pages/Contact/AdminContact';
+import AdminNotice from './Pages/Notice/AdminNotice';
 function App() {
   return (
     <div >
@@ -29,7 +30,7 @@ function App() {
         <Route path="enrollment" element={<Enrollment></Enrollment>}></Route>
         <Route path="services" element={<Services></Services>}></Route>
         <Route path="admingallery" element={<AdminGallery></AdminGallery>}></Route>
-        <Route path="services" element={<Services></Services>}></Route>
+        <Route path="adminnotice" element={<AdminNotice></AdminNotice>}></Route>
         <Route path="singleadmingallery" element={<SingleAdminGallery></SingleAdminGallery>}></Route>
         <Route path="addgallery" element={<AddGallery></AddGallery>}></Route>
         <Route path="usercontact" element={<UserContact></UserContact>}></Route>
