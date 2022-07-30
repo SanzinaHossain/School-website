@@ -19,6 +19,7 @@ import UserContact from './Pages/Contact/UserContact';
 import AdminContact from './Pages/Contact/AdminContact';
 import AdminNotice from './Pages/Notice/AdminNotice';
 import AddNotice from './Pages/Notice/AddNotice';
+import UpdateNotice from './Pages/Notice/UpdateNotice';
 function App() {
   return (
     <div >
@@ -38,6 +39,7 @@ function App() {
         <Route path="usercontact" element={<UserContact></UserContact>}></Route>
         <Route path="admincontact" element={<AdminContact></AdminContact>}></Route>
         <Route path="/updategallery/:id" element={<UpdateGallery></UpdateGallery>}></Route>
+        <Route path="/updatenotice/:id" element={<UpdateNotice></UpdateNotice>}></Route>
       </Routes>
       <Footer></Footer>
       <ToastContainer />
