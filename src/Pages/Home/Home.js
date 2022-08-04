@@ -7,6 +7,9 @@ import Play1 from '../Services/Play1'
 import Enrollment from '../Services/Enrollment'
 import UserContact from '../Contact/UserContact'
 import Footer from '../Footer/Footer'
+import New from '../Services/New'
+import Play2 from '../Services/Play2'
+import Event from '../Services/Event'
 const Home = () => {
   return (
     <div class="">
@@ -24,6 +27,9 @@ const Home = () => {
      <Services></Services>
      <Play1></Play1>
      <Enrollment></Enrollment>
+     <New></New>
+     <Play2></Play2>
+     <Event></Event>
      <UserContact></UserContact>
  </div>
   )

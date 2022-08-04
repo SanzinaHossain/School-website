@@ -1,5 +1,7 @@
 import React from 'react'
 import { useForm } from 'react-hook-form';
+import Classroom from "../../image/services/Classroom.jpg"
+import ContactDetails from '../Services/ContactDetails';
 const UserContact = () => {
     const { register, formState: { errors }, handleSubmit } = useForm();
   const onSubmit = data =>{ 
@@ -24,9 +26,11 @@ const UserContact = () => {
           })      
   }
   return (
-    <div class="bg-orange-200 w-full bg-cover">
-        <h1 className='text-center text-black text-xl pt-7'>Give Your Feedback</h1>
-   <h1 className="text-center bold text-3xl lg:text-4xl mb-9 text-black pt-3">Stay Connected With Us</h1>
+    <>
+    <ContactDetails></ContactDetails>
+    <div class="bg-success w-full bg-cover " style={{backgroundImage:`url(${Classroom})`, opacity:50}}>
+        <h1 className='text-center text-white text-2xl pt-7'>Give Your Feedback</h1>
+   <h1 className="text-center text-3xl lg:text-4xl mb-9 text-white font-bold pt-3">Stay Connected With Us</h1>
     <div class="flex justify-center items-center pt-6 text-black pb-10 ">
   <div class="mx-auto shadow-2xl w-96 h-auto rounded-xl  pl-10 pr-10 pb-10 pt-10 bg-black">
        <form onSubmit={handleSubmit(onSubmit)}>
@@ -90,6 +94,7 @@ const UserContact = () => {
 </div>
 </div>
 </div>
+</>
   )
 }
 

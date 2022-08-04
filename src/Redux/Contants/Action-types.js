@@ -1,0 +1,5 @@
+export const ActionTypes={
+    SET_GALLERY:"SET_GALLERY",
+    SELECTED_GALLERY:"SELECTED_GALLERY"
+
+}

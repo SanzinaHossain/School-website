@@ -20,6 +20,8 @@ import AdminContact from './Pages/Contact/AdminContact';
 import AdminNotice from './Pages/Notice/AdminNotice';
 import AddNotice from './Pages/Notice/AddNotice';
 import UpdateNotice from './Pages/Notice/UpdateNotice';
+import Admission from './Pages/Services/Admission';
+
 function App() {
   return (
     <div >
@@ -36,6 +38,7 @@ function App() {
         <Route path="adminnotice" element={<AdminNotice></AdminNotice>}></Route>
         <Route path="singleadmingallery" element={<SingleAdminGallery></SingleAdminGallery>}></Route>
         <Route path="addgallery" element={<AddGallery></AddGallery>}></Route>
+        <Route path="admission" element={<Admission></Admission>}></Route>
         <Route path="usercontact" element={<UserContact></UserContact>}></Route>
         <Route path="admincontact" element={<AdminContact></AdminContact>}></Route>
         <Route path="/updategallery/:id" element={<UpdateGallery></UpdateGallery>}></Route>

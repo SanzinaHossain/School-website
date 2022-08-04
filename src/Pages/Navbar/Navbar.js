@@ -14,7 +14,7 @@ const Navbar = () => {
   }
   const menuitems=<>
          <li class="hover:text-green-900 font-bold  active text-lg "><Link to ="/" >Home</Link></li>
-        <li class="hover:text-green-900 font-bold mx-7" ><Link to ="/enrollment" >Admission</Link></li>
+        <li class="hover:text-green-900 font-bold mx-7" ><Link to ="/admission" >Admission</Link></li>
         <li class="hover:text-green-700 font-bold">{user? <Link to="/adminnotice">Notice</Link>:<Link to="/notice">Notice</Link>}</li>
         <li class="hover:text-green-700 font-bold mx-7">{user? <Link to="/admingallery">Gallery</Link>:<Link to="/gallery">Gallery</Link>}</li> 
         <li class="hover:text-green-700 font-bold">{user? <Link to="/admincontact">Contact</Link>:<Link to="/usercontact">Contact Us</Link>}</li>
@@ -29,7 +29,7 @@ const Navbar = () => {
         </label>
         <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
         <li><Link to="/" >Home</Link></li>
-        <li><Link to="/enrollment" >Admission</Link></li>
+        <li><Link to="/admission" >Admission</Link></li>
         <li class="hover:text-green-700">{user? <Link to="/adminnotice">Notice</Link>:<Link to="/notice">Notice</Link>}</li>
         <li class="hover:text-green-700">{user? <Link to="/admingallery">Gallery</Link>:<Link to="/gallery">Gallery</Link>}</li> 
         <li class="hover:text-green-700">{user? <Link to="/admincontact">Contact</Link>:<Link to="/usercontact">Contact Us</Link>}</li>

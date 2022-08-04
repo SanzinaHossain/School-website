@@ -1,8 +1,9 @@
 import React from 'react'
+import ContactDetails from './ContactDetails'
 const Enrollment = () => {
   return (
-    <div class="w-full h-auto p-12 mt-5" id="enroll">
-       <h1 class="text-orange-700 text-center text-4xl ">Enrollment</h1>
+    <div class="w-full h-auto p-12 mt-5">
+       <h1 class="text-orange-700 text-center text-4xl font-bold ">Enrollment</h1>
        <h1 class="text-black text-center lg:text-xl text-sm">Steps done with heart, soul, mind & strength</h1>
        <div class="mx-auto mt-9 lg:block hidden">
        <ul class="steps steps-vertical lg:steps-horizontal ">
@@ -46,7 +47,6 @@ const Enrollment = () => {
           <h1 class="text-lg text-gray-700 text-center pt-3">Alterum accommodare duo cu. Ius labore luptatum efficiendi ex, ne vim enim rebum.</h1>
        </div>
     </div>
-
     </div>
   )
 }

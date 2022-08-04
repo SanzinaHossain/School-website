@@ -13,7 +13,7 @@ const Play = () => {
                     </div>
                 </div>
             </div>
-            <div class="mx-auto pt-16" >
+            <div class="mx-auto pt-16 lg:block hidden" >
             <button class="btn btn-outline border-white text-white rounded-full border-2 hover:bg-white hover:border-white hover:text-black">Contact Us</button>
             </div>
          </div>
